@@ -35,11 +35,24 @@
       margin: auto;
     }
     h2 {
-      color: #004080;
-      text-align: left;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;                /* put title + link on same line */
+    justify-content: space-between; /* push link to the right */
+    align-items: center;
+    }
+
+    h2 a.back-to-top {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #004080;
+    text-decoration: none;
+    }
+
+    h2 a.back-to-top:hover {
+    text-decoration: underline;
     }
     p {
       margin-bottom: 1.5rem;
@@ -64,7 +77,7 @@
     }
   </style>
 </head>
-<body>
+<body id="top">
 
   <header>
     <h1>My Research Website</h1>
@@ -82,13 +95,19 @@
   </nav>
 
   <section id="about">
-    <h2>About Me</h2>
+    <h2>
+        About Me
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Hello! I am a graduate student researcher working on (short description of your field). 
     This website highlights five of my major projects, each with visuals from my experiments.</p>
   </section>
 
   <section id="project1">
-    <h2>Project 1: Title Here</h2>
+    <h2>
+        Project 1: Title Here
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Brief description of this project (methods, results, or goals).</p>
     <div class="media">
       <img src="images/project1.jpg" alt="Project 1">
@@ -101,7 +120,10 @@
   </section>
 
   <section id="project2">
-    <h2>Project 2: Title Here</h2>
+    <h2>
+        Project 2: Title Here
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Short description goes here.</p>
     <div class="media">
       <video controls>
@@ -111,7 +133,10 @@
   </section>
 
   <section id="project3">
-    <h2>Project 3: Title Here</h2>
+    <h2>
+        Project 3: Title Here
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Short description goes here.</p>
     <div class="media">
       <img src="images/project3.jpg" alt="Project 3">
@@ -119,7 +144,10 @@
   </section>
 
   <section id="project4">
-    <h2>Project 4: Title Here</h2>
+    <h2>
+        Project 4: Title Here
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Short description goes here.</p>
     <div class="media">
       <video controls>
@@ -129,7 +157,10 @@
   </section>
 
   <section id="project5">
-    <h2>Project 5: Title Here</h2>
+    <h2>
+        Project 5: Title Here
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Short description goes here.</p>
     <div class="media">
       <img src="images/project5.jpg" alt="Project 5">
@@ -137,7 +168,10 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>
+        Contact
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
     <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
     <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
