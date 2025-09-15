@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Research Projects</title>
+  <title>My Research Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,11 +33,13 @@
       padding: 3rem 1rem;
       max-width: 900px;
       margin: auto;
-      text-align: center;
     }
     h2 {
       color: #004080;
-      margin-bottom: 1rem;
+      text-align: left;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
     p {
       margin-bottom: 1.5rem;
@@ -70,16 +72,24 @@
   </header>
 
   <nav>
+    <a href="#about">About</a>
     <a href="#project1">Project 1</a>
     <a href="#project2">Project 2</a>
     <a href="#project3">Project 3</a>
     <a href="#project4">Project 4</a>
     <a href="#project5">Project 5</a>
+    <a href="#contact">Contact</a>
   </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a graduate student researcher working on (short description of your field). 
+    This website highlights five of my major projects, each with visuals from my experiments.</p>
+  </section>
 
   <section id="project1">
     <h2>Project 1: Title Here</h2>
-    <p>Brief description of what this project is about (methods, results, or goals).</p>
+    <p>Brief description of this project (methods, results, or goals).</p>
     <div class="media">
       <img src="images/project1.jpg" alt="Project 1">
       <!-- Or replace with a video:
@@ -124,6 +134,13 @@
     <div class="media">
       <img src="images/project5.jpg" alt="Project 5">
     </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
   </section>
 
   <footer>
