@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Research Website</title>
+  <title>My Research Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
     header {
       background: #004080;
       color: #fff;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     nav {
@@ -30,24 +30,28 @@
       font-weight: bold;
     }
     section {
-      padding: 2rem;
+      padding: 3rem 1rem;
       max-width: 900px;
       margin: auto;
+      text-align: center;
     }
     h2 {
       color: #004080;
-      border-bottom: 2px solid #004080;
-      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
+    p {
+      margin-bottom: 1.5rem;
     }
-    .gallery img, .gallery video {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    .media {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .media img, .media video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     footer {
       text-align: center;
@@ -66,48 +70,60 @@
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <a href="#project1">Project 1</a>
+    <a href="#project2">Project 2</a>
+    <a href="#project3">Project 3</a>
+    <a href="#project4">Project 4</a>
+    <a href="#project5">Project 5</a>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I am a graduate student researcher working on (short description of your field). 
-    I use this website to share highlights of my experiments, photos, and videos.</p>
-  </section>
-
-  <section id="research">
-    <h2>Research</h2>
-    <p>Here you can describe your main research topics. For example:</p>
-    <ul>
-      <li>Robotics experiments with autonomous drones</li>
-      <li>Machine learning for control systems</li>
-      <li>Biomechanics and soft robotics</li>
-    </ul>
-  </section>
-
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="images/experiment1.jpg" alt="Experiment 1">
-      <img src="images/experiment2.jpg" alt="Experiment 2">
+  <section id="project1">
+    <h2>Project 1: Title Here</h2>
+    <p>Brief description of what this project is about (methods, results, or goals).</p>
+    <div class="media">
+      <img src="images/project1.jpg" alt="Project 1">
+      <!-- Or replace with a video:
       <video controls>
-        <source src="videos/experiment1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        <source src="videos/project1.mp4" type="video/mp4">
       </video>
+      -->
+    </div>
+  </section>
+
+  <section id="project2">
+    <h2>Project 2: Title Here</h2>
+    <p>Short description goes here.</p>
+    <div class="media">
       <video controls>
-        <source src="videos/experiment2.mp4" type="video/mp4">
+        <source src="videos/project2.mp4" type="video/mp4">
       </video>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+  <section id="project3">
+    <h2>Project 3: Title Here</h2>
+    <p>Short description goes here.</p>
+    <div class="media">
+      <img src="images/project3.jpg" alt="Project 3">
+    </div>
+  </section>
+
+  <section id="project4">
+    <h2>Project 4: Title Here</h2>
+    <p>Short description goes here.</p>
+    <div class="media">
+      <video controls>
+        <source src="videos/project4.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section id="project5">
+    <h2>Project 5: Title Here</h2>
+    <p>Short description goes here.</p>
+    <div class="media">
+      <img src="images/project5.jpg" alt="Project 5">
+    </div>
   </section>
 
   <footer>
