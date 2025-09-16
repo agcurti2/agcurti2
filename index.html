@@ -3,88 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drew Curtis Research</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background: #40247D;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    nav {
-      margin: 1rem 0;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #40247D;
-      font-weight: bold;
-    }
-    nav a:hover{
-        text-decoration: underline;
-    }
-    section {
-      padding: 3rem 1rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-    color: #40247D;
-    border-bottom: 2px solid #40247D;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;                /* put title + link on same line */
-    justify-content: space-between; /* push link to the right */
-    align-items: center;
-    }
-
-    h2 a.back-to-top {
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: #40247D;
-    text-decoration: none;
-    }
-
-    h2 a.back-to-top:hover {
-    text-decoration: underline;
-    }
-    p {
-      margin-bottom: 1.5rem;
-    }
-    .media {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-    .media img, .media video {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    .small-img {
-    width: 400px;
-    }
-    .half-width {
-    width: 50%;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #40247D;
-      color: #fff;
-      margin-top: 2rem;
-    }
-  </style>
+  <title>Andrew G. Curtis</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
 
@@ -94,13 +14,9 @@
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#project1">MP2</a>
-    <a href="#project2">MP3</a>
-    <a href="#project3">2D Shape Formation</a>
-    <a href="#project4">Quadrotor Swarm</a>
-    <a href="#project5">3D Shape Formation</a>
-    <a href="#contact">Contact</a>
+    <a href="about">About</a>
+    <a href="projects">Research</a>
+    <a href="contact">Contact</a>
   </nav>
 
   <section id="about">
@@ -130,28 +46,15 @@
     </p>
   </section>
 
-  <section id="project1">
-    <h2>
-        MP2: Maneuverable Piccolissimo 2
-        <a href="#top" class="back-to-top">Back to top ↑</a>
-    </h2>
-    <p>Brief description of this project (methods, results, or goals).</p>
-    <div class="media">
-      <!-- <img src="images/project1.jpg" alt="Project 1"> -->
-      <!-- Or replace with a video: -->
-      <video controls>
-        <source src="videos/mp2_open_close.mp4" type="video/mp4">
-      </video>
-     
-    </div>
-    <div class="media">
-      <!-- <img src="images/project1.jpg" alt="Project 1"> -->
-      <!-- Or replace with a video: -->
-      <video controls>
-        <source src="videos/mp2_circle.mp4" type="video/mp4">
-      </video>
-     
-    </div>
+  <section id="projects">
+    <h2>Research Projects</h2>
+    <ul>
+      <li><a href="#project_mp2.html">MP2</a></li>
+      <li></li><a href="#project_mp3.html">MP3</a></li>
+      <li></li><a href="#project_shape2D.html">2D Shape Formation</a></li>
+      <li></li><a href="#project_quadswarm.html">Quadrotor Swarm</a></li>
+      <li></li><a href="#project_shape3D.html">3D Shape Formation</a></li>      
+    </ul>
   </section>
 
   <section id="project2">
