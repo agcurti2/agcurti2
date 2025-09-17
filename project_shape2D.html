@@ -24,11 +24,25 @@
 
   <section>
     <h2>Overview <a href="#top" class="back-to-top">Back to top ↑</a></h2>
-    <p>Write a detailed description of this project here.</p>
+    <p>In this work, I investigated a collective swarm behavior: shape formation.
+      Traditional shape formation algorithms assume robots have enough energy to form the shape, then the algorithms terminate once the shape is formed.
+      This presents limitations to practical applications as the shape can only exist for as long as the energy duration of individual robots, and the shape formation
+      is not adaptable to changes in the environment or human-initiated formation changes.
+      In this work, I develop a set of distributed control algorithms to facilitate swarm shape formation that is <strong>persistent</strong>,
+      meaning the shapes can last beyond the energy duration of individual robots, and <strong>adaptable</strong> to formation changes in real time.
+    </p>
   </section>
 
   <section>
-    <h2>Media <a href="#top" class="back-to-top">Back to top ↑</a></h2>
+    <h2>Shape Persistence <a href="#top" class="back-to-top">Back to top ↑</a></h2>
+    <p>
+      Shape persistence is achieved by finding Hamiltonian cycles through 2D shapes so that robots can follow a Hamiltonian path
+      through a shape that both approximates the shape and moves robots through the shape in a first-in-first-out order.
+      This means that robots are guaranteed to enter the shape, travel through the shape without collision, and then exit the shape 
+      so that they can return to a charging station.
+      Therefore, individual robots are continuously recharging and reentering the shape, while the swarm maintains the shape as a whole persistently and indefinitely.
+      In the paper, I show that a Hamiltonian cycle can be found for any valid, continuous 2D shape.
+    </p>
     <div class="media">
       <img src="images/project1.jpg" alt="Project 1">
       <!-- Or video:
@@ -37,6 +51,40 @@
       </video>
       -->
     </div>
+  </section>
+
+  <section>
+    <h2>Shape Adaptability <a href="#top" class="back-to-top">Back to top ↑</a></h2>
+    <p>
+      Shape adaptability is achieved by detecting the change (in this case a human gesture), filling in a new part of the shape (or removing a part of the shape),
+      and then finding a new Hamiltonian cycle through the new shape. Finding the new Hamiltonian cycle is done using a mix of robot motion and peer-to-peer communication.
+      Like shape persistence, it can be proven that a new Hamiltonian cycle can be found for any valid addition or any valid subtraction to the 2D shape. 
+    </p>
+    <div class="media">
+      <img src="images/project1.jpg" alt="Project 1">
+      <!-- Or video:
+      <video controls>
+        <source src="videos/project1.mp4" type="video/mp4">
+      </video>
+      -->
+    </div>
+  </section>
+
+  <section id="paper">
+    <h2>
+        Publications
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
+    <p>
+      <strong>Andrew G. Curtis</strong>, Mark Yim, Michael Rubenstein. “Continuous Sculpting: Persistent Swarm Shape Formation Adaptable to Local Environmental Changes.” IEEE Transactions on Robotics, 2024.
+    </p>
+    <p>IEEE Link: <a href="https://ieeexplore.ieee.org/abstract/document/10758240?casa_token=VY0MBusaINcAAAAA:EQIOASoFwR_WqcedT4ngeXhBFKRsRIDLiEw4pweiWGWcv7m_D0ADpZfhZLXu23kMUsWDbAIV">TRO Paper</a></p>
+    <p>
+      <strong>Andrew G. Curtis</strong>, Michael Rubenstein. “Scalable Continuous Sculpting: Adaptive and Persistent Swarm Shape Formation Algorithms with Fixed Memory Dependence.” The International Symposium on Distributed Autonomous Robotic Systems (DARS), 2024.
+    </p>
+    <!-- <p>IEEE Link: <a href="https://www.roboticsproceedings.org/rss20/p102.pdf">TRO Paper</a></p> -->
+    <p>Springer Link: Coming Soon</p>
+
   </section>
 
   <footer>
