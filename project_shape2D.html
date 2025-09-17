@@ -31,7 +31,17 @@
     <p>
       In this work, I develop a set of distributed control algorithms to facilitate swarm shape formation that is <strong>persistent</strong>,
       meaning the shapes can last beyond the energy duration of individual robots, and <strong>adaptable</strong> to formation changes in real time.
+      The idea is that a swarm can persist in a shape perpetually, and then that shape can be sculpted into a new shape by a human in the same way an artist may sculpt clay.
     </p>
+    <div class="media">
+      <img src="images/GRAPHICAL_ABSTRACT.png" alt="Image not found.">
+      <!-- Or video:
+      <video controls>
+        <source src="videos/project1.mp4" type="video/mp4">
+      </video>
+      -->
+    </div>
+
   </section>
 
   <section>
@@ -42,16 +52,16 @@
       This means that robots are guaranteed to enter the shape, travel through the shape without collision, and then exit the shape 
       so that they can return to a charging station.
       Therefore, individual robots are continuously recharging and reentering the shape, while the swarm maintains the shape as a whole persistently and indefinitely.
-      In the paper, I show that a Hamiltonian cycle can be found for any valid, continuous 2D shape.
+      In the paper, it is proven that a Hamiltonian cycle can be found for any valid, continuous 2D shape.
     </p>
-    <div class="media">
+    <!-- <div class="media">
       <img src="images/project1.jpg" alt="Project 1">
       <!-- Or video:
       <video controls>
         <source src="videos/project1.mp4" type="video/mp4">
       </video>
       -->
-    </div>
+    </div> -->
   </section>
 
   <section>
@@ -69,6 +79,32 @@
       </video>
       -->
     </div>
+  </section>
+
+  <section>
+    <h2>Demonstration <a href="#top" class="back-to-top">Back to top ↑</a></h2>
+    <p>
+      The 2D shape formation algorithms were demonstrated on a swarm of differential drive ground robots called Coachbots. 
+      The swarm maintained a shape in the middle of the arena while cycling robots to a charging rail at the edge of the arena.
+    </p>
+    <div class="media">
+      <img src="images/2d_id.png" alt="Image not found." class="small-img">
+      <!-- Or video:
+      <video controls>
+        <source src="videos/project1.mp4" type="video/mp4">
+      </video>
+      -->
+    </div>
+
+    <div class="media">
+      <!-- <img src="images/project1.jpg" alt="Project 1"> -->
+      <video controls>
+        <source src="videos/looper2.0.mp4" type="video/mp4">
+      </video>
+      
+    </div>
+    
+
   </section>
 
   <section id="paper">
