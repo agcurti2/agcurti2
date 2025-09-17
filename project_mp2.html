@@ -22,12 +22,43 @@
     <a href="project_quadswarm.html">Quadrotor Swarm</a>
   </nav>
 
-  <section id="project1">
+  <section id="overview">
     <h2>
         Overview
         <a href="#top" class="back-to-top">Back to top ↑</a>
     </h2>
-    <p>Brief description of this project (methods, results, or goals).</p>
+    <div class="media">
+      <img src="images/mp2_fig1.png" alt="Image not found.">     
+    </div>
+    <p>Maneuverable Piccolissimo 2 (MP2) shown stationary (left) and flying (right) is a single-rotor flying robot capable of autonomous takeoff, onboard localization sensing, and autonomous control.
+      Inspired by its predecessor, the original Maneuverable Piccolissimo (MP), MP2 exploits a geometric offset between its motor and its center of mass to tilt itself, 
+      using this tilt and gyroscopic precession to establish control in 3D space. MP2 is an advancement over its predecessor as the original MP only demonstrated rudimentary
+      lateral control, while MP2's controller is capable of precise station keeping, step response, and trajectory following using its onboard PID-based controller.
+    </p>
+
+    <p>
+      MP2 is a proof of concept flyer that strives to bring cost-savings and autonomy to aerial swarms. MP2 has very few complex and expensive components,
+      because it only requires one motor for controlled flight. This has the potential to reduce the cost of manufacturing a swarm of flyers by about 75% 
+      as each robot would require one quarter of the flight components as compared to a traditional quadrotor. MP2 also relies on only structured light for its
+      onboard localization sensing. This is significant becuase, unlike motion-capture-based localization strategies, structured light can be miniaturized
+      and placed onboard the flyer (as explored in MP3), making the flyer more autonomous in less structured environments. 
+    </p>
+  </section>
+
+  <section id="autotakeoff">
+    <h2>
+        Autonomous Takeoff
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
+    <p>
+      MP2 is a free rotor; its body spins during flight. When MP2 is airborne the gyroscopic precession caused by this spinning, and the offset between the motor and its center of mass gives MP2 its lateral control authority.
+      However, for takeoff, the flyer is not yet spinning, so any offset between the motor and the center of mass would cause the flyer to tip over when the motor is powered on.
+      To compensate for this, I developed a unique mechanism design that moves the center of mass as the flyer takes off.
+      To start, the center of mass is coincident with the motor, but as the flyer begins to spin, the center of mass moves to its offset position.
+      Passive springs move the arms back to the original position when the flyer lands and stops spinning.
+      This allows for autonomous takeoff without a specialized takeoff platform or human intervention.
+      This process is animated in the video below. 
+    </p>
     <div class="media">
       <!-- <img src="images/project1.jpg" alt="Project 1"> -->
       <!-- Or replace with a video: -->
@@ -36,6 +67,38 @@
       </video>
      
     </div>
+  </section>
+
+  <section id="sensing">
+    <h2>
+        Onboard Sensing with Structured Light
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
+    <p>
+      MP2 uses structured light in its environment to sense is x, y, and z position in space. It also uses polarized light to sense
+      its yaw orientation as it spins. By using structured light, instead of feedback from a complex, external motion capture system,
+      MP2 proves that a single-rotor flyer can sense its own position using simple onboard sensors. Further, structured light can be
+      scaled down to fit on other robots, allowing an MP2-like flyer to sense its position relative to other robots in a swarm (as
+      explored in the MP3 project). A depiction of MP2's environment is provided below. 
+    </p>
+    <div class="media">
+      <img src="images/BaseStation.png" alt="Image not found.">     
+    </div>
+
+  </section >
+
+  <section id="flight">
+    <h2>
+        Autonomous Flight
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
+    <p>
+      Most single-rotor flyers prior to MP2 relied on complex controllers that required feedback on a 12-part system state.
+      To reduce the complexity of the flyer and the sensors required to inform the controller, I developed a simple PID-based controller
+      that requires feedback on x, y, z, and yaw only. Given this information, MP2 can achieve precise control in 3D space for maneuvers
+      such as station keeping, step response, and line following. A video of MP2 following a circular trajectory is provided here.
+      For more control results, please see the publication in IEEE Robotics and Automation Letters.
+    </p>
     <div class="media">
       <!-- <img src="images/project1.jpg" alt="Project 1"> -->
       <!-- Or replace with a video: -->
@@ -46,8 +109,20 @@
     </div>
   </section>
 
+  <section id="paper">
+    <h2>
+        Publication
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+    </h2>
+    <p>
+      Curtis, Andrew G., et al. "Autonomous 3D position control for a safe single motor micro aerial vehicle." IEEE Robotics and Automation Letters 8.6 (2023): 3566-3573.
+    </p>
+    <p>IEEE Link: <a href="https://ieeexplore.ieee.org/abstract/document/10106402?casa_token=ZJlAtyNl11wAAAAA:WulHtCV8vbPYqYZc-T46bEnFmQhaHJDaOE90F48pzOVzZaUTKlNsikHUJWF5JEHeo0wtaA4q">MP2 Paper</a></p>
+
+  </section>
+
   <footer>
-    <p>&copy; 2025 Your Name. <a href="index.html">Back to Home</a></p>
+    <p>&copy; 2025 Drew Curtis. <a href="index.html">Back to Home</a></p>
   </footer>
 
 </body>
